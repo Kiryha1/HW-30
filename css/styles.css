@@ -1,0 +1,45 @@
+.box {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  border: 3px solid #000;
+  margin: auto
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  animation: moveAndChangeColor 4s infinite; 
+}
+
+@keyframes moveAndChangeColor {
+  0% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: blue;
+    top: 400px;
+    left: 0;
+  }
+  50% {
+    background-color: green;
+    top: 400px;
+    left: 600px;
+  }
+  75% {
+    background-color: yellow;
+    top: 0;
+    left: 600px;
+  }
+  100% {
+    background-color: red;
+    top: 0;
+    left: 0;
+  }
+}
